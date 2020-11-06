@@ -44,14 +44,30 @@
             line-height: 1.5;
         }
 
-        .server-info .footer {
+        .server-info .footer, .server-info .footer:visited {
+            color: inherit;
+            text-decoration: none;
             display: flex;
             align-items: center;
+            background-color: #FFED01;
+            padding: 10px 10px 8px 10px;
+            border-radius: 4px;
+            box-shadow: 10px 5px #000
         }
 
-        .server-info .footer .invite, .server-info .footer .invite:visited {
-            color: blue;
-            margin-right: 12px;
+        .server-info .footer .discord-logo {
+            height: 54px;
+            margin-right: 10px;
+        }
+
+        .server-info .footer .button-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .server-info .footer .cta {
+            font-size: 18px;
+            margin-bottom: 4px;
         }
     </style>
 </head>
@@ -66,10 +82,13 @@
         <p class="description">
             A Discord community for <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> programmers of all experiences levels (including those who haven't started programming yet). Anyone who's alright being in a space that centers <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> programmers is welcome as well 💜.
         </p>
-        <div class="footer">
-            <a class="invite" href="https://discord.gg/zdQvsrA">Join the Discord server</a>
-            <img class="shield" aria-hidden="true" src="https://discordapp.com/api/guilds/767137106626609164/widget.png?style=shield">
-        </div>
+        <a class="footer" href="https://discord.gg/zdQvsrA">
+            <img class="discord-logo" src="./discord-logo.svg">
+            <div class="button-text">
+                <div class="cta">Join the Discord server</div>
+                <div>8 online / 31 total</div>
+            </div>
+        </a>
     </div>
 </body>
 </html>
