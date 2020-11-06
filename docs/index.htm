@@ -10,24 +10,26 @@
     <meta property="og:image" content="https://lgbtqprogrammers.com/discord-avatar-with-padding.png">
     <meta property="og:url" content="https://lgtqprogrammers.com">
 
+    <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700, 900" rel="stylesheet">
+
     <title>
         LGBTQ+ Programmers: A Discord community
     </title>
     <style>
         body {
             display: flex;
-            height: 80vh;
+            min-height: 100vh;
             box-sizing: border-box;
             margin: 0;
-            padding: 20px;
+            padding: 100px 20px;
             justify-content: center;
             align-items: center;
             font-family: sans-serif;
         }
 
         .server-info {
-            max-width: 600px;
-            margin: auto;
+            width: min-content;
         }
 
         .server-info .title {
@@ -35,60 +37,103 @@
             align-items: center;
         }
 
+        .server-info .title .text {
+            -webkit-text-stroke: 3px #000;
+            font-size: 84px;
+            color: #FF8C01;
+            font-family: Chivo, sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         .server-info .logo {
-            height: 46px;
-            margin-right: 16px;
+            height: 160px;
+            margin: -20px 20px -20px 0;
         }
 
-        .server-info .description {
-            line-height: 1.5;
-        }
-
-        .server-info .footer, .server-info .footer:visited {
+        .server-info .join-button, .server-info .join-button:visited {
             color: inherit;
             text-decoration: none;
             display: flex;
             align-items: center;
             background-color: #FFED01;
-            padding: 10px 10px 8px 10px;
+            padding: 20px 20px 18px 20px;
             border-radius: 4px;
-            box-shadow: 10px 5px #000
+            border: 3px solid #000;
+            box-shadow: 15px 10px #000
         }
 
-        .server-info .footer .discord-logo {
+        .server-info .join-button .discord-logo {
             height: 54px;
             margin-right: 10px;
         }
 
-        .server-info .footer .button-text {
+        .server-info .join-button .button-text {
             display: flex;
             flex-direction: column;
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        .server-info .footer .cta {
-            font-size: 18px;
+        .server-info .join-button .cta {
+            font-size: larger;
             margin-bottom: 4px;
+        }
+
+        .server-info .welcome-message {
+            line-height: 1.5;
+            margin: 80px 40px;
+            font-family: Merriweather, serif;
+            font-size: 18px;
+        }
+
+        .server-info .welcome-message h2 {
+            font-weight: 900;
+            font-size: 32px;
+            border-bottom: 10px solid #FF8C01;
         }
     </style>
 </head>
 <body>
     <div class="server-info">
         <h1 class="title">
-            <img class="logo" aria-hidden="true" src="discord-avatar.png">
-            <div>
-                <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> Programmers
+            <img class="logo" alt='A logo depicting a rainbow heart with the text "Hello World" written across it' src="discord-avatar.png">
+            <div class="text">
+                <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr><br>Programmers
             </div>
         </h1>
-        <p class="description">
-            A Discord community for <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> programmers of all experiences levels (including those who haven't started programming yet). Anyone who's alright being in a space that centers <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> programmers is welcome as well 💜.
-        </p>
-        <a class="footer" href="https://discord.gg/zdQvsrA">
+        <a class="join-button" href="https://discord.gg/zdQvsrA">
             <img class="discord-logo" src="./discord-logo.svg">
             <div class="button-text">
                 <div class="cta">Join the Discord server</div>
                 <div>8 online / 31 total</div>
             </div>
         </a>
+        <div class="welcome-message">
+            <h2>Welcome Message</h2>
+            <p class="description">
+                This is a community for <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> programmers of all experiences levels (including those who haven't started programming yet). Anyone who's alright being in a space that centers <abbr title="Lesbian, Gay, Bi, Trans, Queer, and more">LGBTQ+</abbr> programmers is welcome as well 💜.
+            </p>
+            <p>
+                This is a brand new community and I expect it to grow extremely slowly: fasten your seatbelts, it's going to be a quiet night.
+            </p>
+            <p>
+                <b>Beware</b>: You may want to disable DMs from members of this server (through this server's "Privacy Settings"). This is a publicly advertised Discord server and assholes like to join and DM hateful messages.
+            </p>
+            <p>
+                <b>Communal Moderation</b>: I want all of us to be empowered to advocate for ourselves and for eachother. There is no requirement to "be nice" or to "be civil" when someone is being ignorant or hateful.
+            </p>
+            <p>
+                <b>Channels</b>: There's very few channels because there's very few people. More channels will be created as needed.
+            </p>
+            <p>
+                <b>Colors</b>: Use <code>!setcolor #ff0000</code> to change your color to anything you’d like.
+            </p>
+            <p>
+                <b>Invite Link</b>: Share the server by linking to our landing page at <a href="https://lgbtqprogrammers.com">https://lgbtqprogrammers.com/</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
