@@ -15,17 +15,14 @@
     </title>
     <style>
         body {
-            display: flex;
-            min-height: 100vh;
-            box-sizing: border-box;
+            display: block;
             margin: 0;
             padding: 100px 20px;
-            justify-content: center;
-            align-items: center;
             font-family: sans-serif;
         }
 
         .server-info {
+            margin: 0 auto;
             width: 80%;
             max-width: 1200px;
         }
@@ -95,7 +92,6 @@
         }
 
         .server-info .welcome-message {
-            font-family: sans-serif;
             line-height: 1.5;
             margin: 80px 40px;
             font-size: 18px;
@@ -147,6 +143,8 @@
             .server-info .title {
                 flex-direction: column-reverse;
                 align-items: start;
+                overflow-y: hidden;
+                margin-bottom: 0;
             }
 
             .server-info .title .text {
@@ -157,7 +155,7 @@
             .server-info .title .logo {
                 width: 80%;
                 height: auto;
-                margin: 40px 0 -30vw 0;
+                margin: 40px 0 -25vw 0;
                 align-self: center;
             }
 
