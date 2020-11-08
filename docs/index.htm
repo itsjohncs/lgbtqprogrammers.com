@@ -130,6 +130,30 @@
             margin: -2px;
         }
 
+        .server-info .edit-link, .server-info .edit-link:visited {
+            display: block;
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .server-info .edit-link:hover {
+            text-decoration: underline;
+        }
+
+        .server-info .edit-link:focus {
+            border: 2px solid #0060FF;
+            padding: 18px;
+        }
+
+        .server-info .edit-link .text {
+            padding: 4px 8px;
+            background-color: #FFF;
+        }
+
         @media (max-width: 600px) {
             body {
                 display: block;
@@ -217,6 +241,9 @@
                 <b>Invite Link</b>: Share the server by linking to our landing page at <a href="https://lgbtqprogrammers.com">lgbtqprogrammers.com</a>
             </p>
         </div>
+        <a class="edit-link" href="https://github.com/itsjohncs/lgbtqprogrammers.com">
+            <span class="text">Edit this page on GitHub</span class="text">
+        </a>
     </div>
 </body>
 </html>
