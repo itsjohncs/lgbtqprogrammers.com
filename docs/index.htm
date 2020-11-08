@@ -52,6 +52,7 @@
         }
 
         .server-info .join-button, .server-info .join-button:visited {
+            position: relative;
             color: inherit;
             text-decoration: none;
             display: flex;
@@ -70,6 +71,14 @@
         .server-info .join-button:focus {
             border: 5px solid #0060FF;
             margin: -2px;
+        }
+
+        .server-info .join-button:active {
+            /* This can cause the button to move away from the cursor between
+               mouse up and mouse down... not good. But it's too fun 😅 */
+            left: 5px;
+            top: 5px;
+            box-shadow: 10px 5px #000;
         }
 
         .server-info .join-button .discord-logo {
@@ -158,8 +167,6 @@
 
             .server-info .join-button {
                 margin-right: 10px;
-                position: relative;
-                z-index: 1;
             }
 
             .server-info .join-button .button-text {
